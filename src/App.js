@@ -1,5 +1,6 @@
 import React, { useState, useRef, useCallback } from "react";
 import useBookSearch from "./useBookSearch";
+import "./App.css";
 
 export default function App() {
   const [query, setQuery] = useState("");
@@ -29,7 +30,14 @@ export default function App() {
 
   return (
     <>
-      <input type="text" value={query} onChange={handleSearch}></input>
+      <h1>Search your desired book</h1>
+      <input
+        className="searchBox"
+        type="text"
+        value={query}
+        onChange={handleSearch}
+      ></input>
+      <h3>Search Result:</h3>
       {books.map((book, index) => {
         if (books.length === index + 1) {
           return (

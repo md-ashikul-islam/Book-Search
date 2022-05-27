@@ -1,0 +1,13 @@
+* {
+  background-color: rgb(172, 201, 226);
+}
+.searchBox {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+h1 {
+  color: rgb(53, 21, 21);
+}
